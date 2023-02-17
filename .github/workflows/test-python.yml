@@ -28,3 +28,6 @@ jobs:
       - name: run coverage
         run: |
           coverage run -m pytest --profile
+      - name: run locust
+        run: |
+          locust --config=.locust.conf
