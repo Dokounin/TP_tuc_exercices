@@ -27,4 +27,4 @@ jobs:
           pylint application/ tests/ --exit-zero
       - name: run coverage
         run: |
-          python3 -m coverage
+          coverage run -m pytest --profile
